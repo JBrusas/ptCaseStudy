@@ -171,8 +171,19 @@ nav ul
     nav { float: none; width: auto; padding: 0;}
     nav ul { padding-left: 10px; margin-top: 0.5em; margin-bottom:                  0.5em;}
     nav li { display: inline; padding-top: 0; padding-bottom: 0;                    padding-right: 0.75em; padding-left: 0.75em;}
-    content { margin-left: 0;}
+    #content { margin-left: 0;}
     footer { margin-left: 0;}
     }
-
-    
+@media only screen and (max-width: 550px) { 
+    #gallery { display: none;}
+}
+@media only screen and (max-width: 480px) {
+    h1 {padding-left: 0.3em; margin: 0; font-size: 1.5em;}
+    #content {padding-top: 0.1em; padding-bottom: 0.1em; padding-left:  
+                1em; padding-right: 1em; margin: 0; font-size: 90%;}
+    nav ul { text-align: center; padding: 0; margin: 0;}
+    nav li { display: block; margin: 0; padding: 0.3em; border-bottom:               2px; border-bottom-color: #330000;}
+    nav a: { display: block;}
+    #content img { float: none; padding: 0; margin: 0.1em;}
+    #content ul {list-style-position: outside;}
+}
