@@ -191,10 +191,10 @@ nav ul
     #content {padding-top: 0.1em; padding-bottom: 0.1em; padding-left:  
                 1em; padding-right: 1em; margin: 0; font-size: 90%;}
     nav ul { text-align: center; padding: 0; margin: 0;}
-    nav li { display: block; margin: 0; padding: 0.3em; border-bottom:               2px; border-bottom-color: #330000;}
+    nav li { display: block; margin: 0; padding: 0.3em; border-bottom: solid 2px #330000;}
     nav a { display: block;}
     #content img { float: none; padding: 0; margin: 0.1em;}
     #content ul {list-style-position: outside;}
     .desktop {display: none;}
     .mobile {display: inline;}
-}
+} 
