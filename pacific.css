@@ -82,6 +82,7 @@ nav a:visited
 nav a:hover
     {
     color: #ffffff;
+    transition: 3s ease-out;
     }
 #yls
     {
@@ -100,7 +101,7 @@ nav a:hover
     margin-left: 190px;
     background-color: #ffffff;
     }
-#content img
+#content img, #content video, #content embed
     {
     float: left;
     padding-right: 20px;
@@ -173,15 +174,53 @@ nav ul
     {
     display: none;
     }
+table
+    {
+    border: 1px solid #3399CC;
+    width: 80%;
+    border-spacing: 0;
+    }
+td
+    {
+    padding: 5px;
+    border: 1px solid #3399CC;
+    text-align: center;
+    }
+.text
+    {
+    text-align: left;
+    }
+.altrow
+    {
+    background-color: #F5FAFC;    
+    }
+.labels
+    {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 15px;
+    }
+input, textarea
+    {
+    display: block;
+    margin-bottom: 20px;
+    }
+
+    
 
 @media only screen and (max-width: 768px) {
     body { margin: 0;}
     #wrapper { min-width: 0; width: auto; box-shadow: none;}
     nav { float: none; width: auto; padding: 0;}
-    nav ul { padding-left: 10px; margin-top: 0.5em; margin-bottom:                  0.5em;}
-    nav li { display: inline; padding-top: 0; padding-bottom: 0;                    padding-right: 0.75em; padding-left: 0.75em;}
+    nav ul { padding-left: 10px; margin-top: 0.5em; margin-bottom: 0.5em;}
+    nav li { display: inline; padding-top: 0; padding-bottom: 0; padding-right: 0.75em; padding-left:
+            0.75em;}
     #content { margin-left: 0;}
     footer { margin-left: 0;}
+    #content img { display: none;}
+    #content video {display: block;}
     }
 @media only screen and (max-width: 550px) { 
     #gallery { display: none;}
@@ -193,8 +232,11 @@ nav ul
     nav ul { text-align: center; padding: 0; margin: 0;}
     nav li { display: block; margin: 0; padding: 0.3em; border-bottom: solid 2px #330000;}
     nav a { display: block;}
-    #content img { float: none; padding: 0; margin: 0.1em;}
+    #content img { float: none; padding: 0; margin: 0.1em; display: block;}
     #content ul {list-style-position: outside;}
     .desktop {display: none;}
     .mobile {display: inline;}
+    .label {float: none;}
+    #content video {display: none;}
+    
 } 
