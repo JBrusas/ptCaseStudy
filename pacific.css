@@ -207,7 +207,10 @@ input, textarea
     display: block;
     margin-bottom: 20px;
     }
-
+.imgdesktop
+    {
+    display: none
+    }
     
 
 @media only screen and (max-width: 768px) {
@@ -238,5 +241,6 @@ input, textarea
     .mobile {display: inline;}
     .label {float: none;}
     #content video {display: none;}
+    .imgdesktop { display: block;}
     
 } 
